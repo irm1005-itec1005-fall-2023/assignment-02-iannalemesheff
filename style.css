@@ -1,19 +1,491 @@
-/*
- * Assignment 02
- * CSS FILE
- */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fb8500;
+
+  background-color: #1f1c23;
   display: flex;
-  justify-content: center;
-  align-items: center;
+flex-direction:column;
+  background-image: url('./images/desertrose.png');
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  color: #023047;
+/*HEADER*/
+header {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+background-color:rgb(12, 12, 12);
+color:aliceblue;
+}
+
+header img{
+  height:100px;
+  align-self:center;
+  margin:1rem;
+  padding:0.5rem;
+}
+
+header h2 {
+align-self:center;
+margin: 0rem 0rem 0rem 2.5rem;
+letter-spacing: 1px;
+}
+
+header ul {
+  display:flex;
+  align-items: center;
+  list-style:none;
+}
+
+header ul li{
+display:flex;
+margin:2rem;
+}
+
+header ul li a{
+  color:aliceblue;
+  text-decoration: none;
+}
+
+header ul li :hover{
+  color:rgb(174, 131, 161);
+  text-decoration:underline;
+}
+
+/*MAIN*/
+main {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:rgb(193, 193, 198);
+}
+
+.hero {
+  background: linear-gradient(to bottom, #0e0c0d, #473a6e62);
+  border-style:double;
+  padding:1rem;
+  margin:3rem;
+  display:grid;
+  grid-template-columns: 3fr 2.5fr 2fr;
+  width: 1100px;
+  height: 500px;
+  align-content:center;
+  justify-content: center;
+  grid-template-rows: 3fr 1fr;
+}
+
+.hero img {
+  width:500px;
+}
+
+.highlights {
+  background-color:rgb(12, 12, 12);
+  padding:2rem;
+  margin:2rem;
+}
+
+.highlights h1 {
+  margin-bottom:1rem;
+}
+
+.sky {
+  background-color:rgb(9, 13, 19);
+  padding:1rem;
+  margin:2rem;
+}
+
+.sky small {
+  margin-left:2.1rem;
+}
+
+.contents {
+  background-color:rgb(12, 12, 12);
+  padding:2rem;
+  margin:2rem;
+}
+.contents ol{
+  list-style:georgian;
+  letter-spacing: 2px;
+}
+
+.content-camping {
+  margin-top:4rem;
+  margin-bottom:2rem;
+}
+.content-birthday {
+  margin-bottom:2rem;
+}
+.content-nyc {
+  margin-bottom:2rem;
+}
+
+.camping {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom:2rem;
+  margin-left:3rem;
+}
+.camping-images {
+  display:grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr);
+  width:600px;
+  border-style:double;
+  border-color:antiquewhite;
+}
+.jackson-rear-parking {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color:rgb(12, 12, 12);
+  padding:0.5rem;
+}
+.snail {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+background-color:rgb(12, 12, 12);
+padding:0.5rem;
+}
+.campfire {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:rgb(12, 12, 12);
+  padding:0.5rem;
+}
+.caterpillar {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:rgb(12, 12, 12);
+  padding:0.5rem;
+}
+.camping-text {
+  background-color:rgb(12, 12, 12);
+  border-style:solid;
+  border-color:antiquewhite;
+  
+  width:400px;
+  height:300px;
+  margin:2rem;
+  padding:1.5rem;
+  display:grid;
+  grid-template-rows: repeat(2,1fr);
+}
+.camping-text img {
+display:flex;
+justify-self: end;
+width:200px;
+margin-top:8rem;
+border-style:double;
+border-color:rgb(177, 169, 191);
+}
+
+.camping-text a {
+  color:rgb(174, 131, 161);
+  text-decoration:none;
+}
+.camping-text a:hover {
+  text-decoration:underline;
+}
+
+.birthday {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom:2rem;
+  margin-left:3rem;
+}
+.birthday-images {
+  display:grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr);
+  width:600px;
+  border-style:double;
+  border-color:antiquewhite;
+}
+.jackson-and-ianna {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color:rgb(12, 12, 12);
+  padding:0.5rem;
+}
+.blackcurrant-drink {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+background-color:rgb(12, 12, 12);
+padding:0.5rem;
+}
+.jackson-corona {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:rgb(12, 12, 12);
+  padding:0.5rem;
+}
+.mirror-photo {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:rgb(12, 12, 12);
+  padding:0.5rem;
+}
+.birthday-text {
+  background-color:rgb(12, 12, 12);
+  border-style:solid;
+  border-color:antiquewhite;
+  
+  width:400px;
+  height:300px;
+  margin:2rem;
+  padding:1.5rem;
+  display:grid;
+  grid-template-rows: repeat(2,1fr);
+}
+.birthday-text img {
+display:flex;
+justify-self: start;
+width:200px;
+margin-top:5rem;
+border-style:double;
+border-color:rgb(177, 169, 191);
+}
+.birthday-text a {
+  color:rgb(174, 131, 161);
+  text-decoration:none;
+}
+.birthday-text a:hover {
+  text-decoration:underline;
+}
+
+.nyc {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom:2rem;
+  margin-left:3rem;
+}
+.nyc-images {
+  display:grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr);
+  width:600px;
+  border-style:double;
+  border-color:antiquewhite;
+}
+.nyc-skyline {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color:rgb(12, 12, 12);
+  padding:0.5rem;
+}
+.claw-machine {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+background-color:rgb(12, 12, 12);
+padding:0.5rem;
+}
+.salem-and-ianna {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:rgb(12, 12, 12);
+  padding:0.5rem;
+}
+.tag-art {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:rgb(12, 12, 12);
+  padding:0.5rem;
+}
+.nyc-text {
+  background-color:rgb(12, 12, 12);
+  border-style:solid;
+  border-color:antiquewhite;
+  
+  width:400px;
+  height:300px;
+  margin:2rem;
+  padding:1.5rem;
+  display:grid;
+  grid-template-rows: repeat(2,1fr);
+}
+.nyc-text img {
+display:flex;
+justify-self: end;
+width:300px;
+margin-top:4rem;
+border-style:double;
+border-color:rgb(177, 169, 191);
+}
+.nyc-text a {
+  color:rgb(174, 131, 161);
+  text-decoration:none;
+}
+.nyc-text a:hover {
+  text-decoration:underline;
+}
+
+.table-area {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  margin-bottom:2rem;
+  margin-left:3.5rem;
+}
+.gifs {
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:-1;
+  margin-top:5rem;
+}
+
+.gifs :nth-child(odd){
+margin-left:5rem;
+}
+.gifs img {
+  border-style:double;
+  border-color:rgb(37, 31, 37);
+  border-width: 0.5rem;
+  margin:1rem 1rem 1rem 0rem;
+  width:300px;
+}
+
+.cat-table {
+  background-color: rgb(12, 12, 12);
+  border-style:dashed;
+  border-color:rgb(98, 95, 103);
+  margin: 2rem;
+  padding:1rem;
+  width:700px;
+  height:920px;
+  grid-column-start:2;
+  grid-column-end:-1;
+}
+.cat-table img {
+  padding: 0.5rem;
+  width: 550px;
+  border-style:double;
+  border-color:rgb(202, 201, 184);
+  margin:0.1rem;
+  background-color:rgb(8, 17, 9);
+}
+.name {
+padding:3rem;
+letter-spacing:1px;
+}
+.row1 {
+  background-color:rgb(48, 50, 49);
+}
+.row2 {
+  background-color: rgba(75, 77, 72, 0.406);
+}
+.description {
+  padding:1rem;
+}
+
+.form-area {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom:2rem;
+  margin-left:3rem;
+}
+.feedback-form {
+grid-column-start:1;
+grid-column-end:2;
+background-color:#0e0c0d;
+
+padding:1rem;
+width:600px;
+}
+.form-main {
+background-color:#1c1925;
+}
+.form-main nav{
+margin:0.5rem;
+}
+.form-submit {
+background-color:#423f4b;
+}
+.feedback-form-image {
+  grid-column-start:2;
+  grid-column-end:-1;
+  width:400px;
+}
+.feedback-form-image img{
+  border-style:dashed;
+  margin-left:5.5rem;
+  margin-top:1.5rem;
+  background-color: #0e0c0d;
+  padding:0.5rem;
+}
+
+footer {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+display:flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+background-color:rgb(12, 12, 12);
+color:aliceblue;
+}
+
+footer img{
+  height:100px;
+  align-self:center;
+  margin:1rem;
+  padding:0.5rem;
+}
+
+footer h2 {
+align-self:center;
+margin: 0rem 0rem 0rem 2.5rem;
+letter-spacing: 1px;
+}
+
+footer ul {
+  display:flex;
+  align-items: center;
+  list-style:none;
+}
+
+footer ul li{
+display:flex;
+margin:2rem;
+}
+
+footer ul li a{
+  color:aliceblue;
+  text-decoration: none;
+}
+
+footer ul li :hover{
+  color:rgb(174, 131, 161);
+  text-decoration:underline;
+}
+
+.social-media {
+  display:flex;
+  flex-direction:column;
+  margin:2rem;
+}
+footer small a{
+  color:rgb(174, 131, 161);
+  text-decoration:none;
+}
+footer small a:hover{
+  text-decoration:underline;
 }
